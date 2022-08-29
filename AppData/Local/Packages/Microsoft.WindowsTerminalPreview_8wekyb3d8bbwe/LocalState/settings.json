@@ -227,7 +227,7 @@
                 "size": 11
             },
             "opacity": 100,
-            "useAcrylic": true
+            "useAcrylic": false
         },
         "list": 
         [
@@ -532,5 +532,6 @@
             "yellow": "#E0AF68"
         }
     ],
-    "useAcrylicInTabRow": true
+    "showTerminalTitleInTitlebar": true,
+    "useAcrylicInTabRow": false
 }
