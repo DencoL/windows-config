@@ -4,7 +4,14 @@ Invoke-Expression (&starship init powershell)
 
 function dtf([string]$testName)
 {
-    dotnet test --filter "FullyQualifiedName~$testName" --logger "console;verbosity=detailed"
+    if (-not ([string]::IsNullOrEmpty($testName)))
+    {
+        dotnet test --filter "FullyQualifiedName~$testName" --logger "console;verbosity=detailed"
+    }
+    else
+    {
+        dotnet test --logger "console;verbosity=detailed"
+    }
 }
 
 function nvimdf()
