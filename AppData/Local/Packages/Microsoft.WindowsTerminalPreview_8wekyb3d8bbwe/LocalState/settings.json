@@ -4,11 +4,20 @@
     "actions": 
     [
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
             "command": 
             {
-                "action": "prevTab"
+                "action": "moveTab",
+                "direction": "backward"
             },
-            "keys": "ctrl+h"
+            "keys": "ctrl+shift+h"
         },
         {
             "command": 
@@ -19,12 +28,11 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+h"
         },
         {
             "command": 
@@ -34,18 +42,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+alt+q"
-        },
-        {
-            "command": 
-            {
-                "action": "switchToTab",
-                "index": 2
-            },
-            "keys": "ctrl+3"
         },
         {
             "command": "unbound",
@@ -126,6 +122,18 @@
         {
             "command": "unbound",
             "keys": "ctrl+q"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 2
+            },
+            "keys": "ctrl+3"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+alt+q"
         },
         {
             "command": 
@@ -215,6 +223,14 @@
                 "index": 4294967295
             },
             "keys": "ctrl+9"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "keys": "ctrl+shift+l"
         }
     ],
     "copyFormatting": "none",
