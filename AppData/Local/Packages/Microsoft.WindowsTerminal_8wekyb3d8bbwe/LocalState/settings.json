@@ -8,40 +8,12 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
-                "action": "moveTab",
-                "direction": "backward"
+                "action": "switchToTab",
+                "index": 2
             },
-            "keys": "ctrl+shift+h"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "prevTab"
-            },
-            "keys": "ctrl+h"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
+            "keys": "ctrl+3"
         },
         {
             "command": "unbound",
@@ -124,12 +96,46 @@
             "keys": "ctrl+q"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 2
+                "action": "prevTab"
             },
-            "keys": "ctrl+3"
+            "keys": "ctrl+h"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "closePane",
@@ -138,10 +144,26 @@
         {
             "command": 
             {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 5
             },
             "keys": "ctrl+6"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "keys": "ctrl+1"
         },
         {
             "command": "openTabRenamer",
@@ -188,14 +210,6 @@
             "command": 
             {
                 "action": "switchToTab",
-                "index": 0
-            },
-            "keys": "ctrl+1"
-        },
-        {
-            "command": 
-            {
-                "action": "switchToTab",
                 "index": 1
             },
             "keys": "ctrl+2"
@@ -223,14 +237,6 @@
                 "index": 4294967295
             },
             "keys": "ctrl+9"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "forward"
-            },
-            "keys": "ctrl+shift+l"
         }
     ],
     "copyFormatting": "none",
@@ -271,28 +277,10 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{78d74f22-1ee2-5747-bc26-87fbf0c21c67}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{cea50768-acf1-57d3-9cd9-219bfd36565d}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
                 "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
                 "hidden": true,
                 "name": "Ubuntu-22.04",
                 "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}",
-                "hidden": false,
-                "name": "Ubuntu 22.04.1 LTS",
-                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
             }
         ]
     },
