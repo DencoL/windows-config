@@ -4,16 +4,33 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
         },
         {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 2
+                "action": "prevTab"
             },
-            "keys": "ctrl+3"
+            "keys": "ctrl+h"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "command": "paste"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "unbound",
@@ -106,27 +123,10 @@
         {
             "command": 
             {
-                "action": "prevTab"
+                "action": "switchToTab",
+                "index": 2
             },
-            "keys": "ctrl+h"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
-        {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "backward"
-            },
-            "keys": "ctrl+shift+h"
+            "keys": "ctrl+3"
         },
         {
             "command": 
@@ -242,6 +242,8 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "initialCols": 235,
+    "initialRows": 65,
     "profiles": 
     {
         "defaults": 
