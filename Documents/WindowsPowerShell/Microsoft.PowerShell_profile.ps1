@@ -28,3 +28,8 @@ function tf()
 {
     terraform $Args
 }
+
+function vim()
+{
+    nvim $Args
+}
