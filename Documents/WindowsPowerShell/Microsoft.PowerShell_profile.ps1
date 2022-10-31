@@ -33,3 +33,8 @@ function vim()
 {
     nvim $Args
 }
+
+function f()
+{
+    Invoke-FuzzySetLocation
+}
