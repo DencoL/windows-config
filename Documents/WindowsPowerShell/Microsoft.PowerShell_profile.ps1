@@ -38,3 +38,8 @@ function f()
 {
     Invoke-FuzzySetLocation
 }
+
+function ..()
+{
+    cd ..
+}
