@@ -43,3 +43,8 @@ function ..()
 {
     cd ..
 }
+
+function ll()
+{
+    ls $Args
+}
